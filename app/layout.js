@@ -1,7 +1,8 @@
+import NavBar from "./NavBar/NavBar";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Be_Vietnam_Pro } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const beVietnamePro = Be_Vietnam_Pro({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
     title: "Duy Hao Engineering - ",
@@ -14,7 +15,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body className={inter.className}>{children}</body>
+            <body className={beVietnamePro.className}>
+                <NavBar />
+                {children}
+            </body>
         </html>
     );
 }
