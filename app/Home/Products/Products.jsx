@@ -4,7 +4,7 @@ export default function Products() {
         <div key={i} className="w-52 bg-slate-400 text-white h-64 mt-1"></div>
     ));
     return (
-        <section id="products" className="w-full md:px-20 mt-10">
+        <section id="products" className="w-full px-4 md:px-20 mt-10">
             <h2 className=" text-duy-hao-purple font-medium text-2xl">
                 Những Sản Phẩm Nổi Bật
             </h2>

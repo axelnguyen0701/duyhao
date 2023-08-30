@@ -1,0 +1,30 @@
+{
+    "resources": [
+        {
+            "title": "NHÀ MÁY TẤM THẠCH CAO VGSI",
+            "subtitle": "Bà Rịa – Vũng Tàu",
+            "imageUrl": "/projects/ba-ria.png"
+        },
+        {
+            "title": "CÔNG VIÊN NƯỚC SƠN TIÊN",
+            "subtitle": "Vũng Tàu",
+            "imageUrl": "/projects/son-tien.png"
+        },
+        {
+            "title": "NHÀ MÁY TÂN HOÀNG GIA",
+            "subtitle": "Củ Chi, TPHCM",
+            "imageUrl": "/projects/tan-hoang-gia.png"
+        },
+
+        {
+            "title": "XÂY DỰNG MỞ RỘNG BỆNH VIỆN QUÂN Y 175.",
+            "subtitle": "Gò Vấp – TP.HCM",
+            "imageUrl": "/projects/175.jpg"
+        },
+        {
+            "title": "NHÀ MÁY SẢN XUẤT CÀ PHÊ HÒA TAN TRUNG NGUYÊN",
+            "subtitle": "TP.Dĩ An – Bình Dương",
+            "imageUrl": "/projects/trung-nguyen.png"
+        }
+    ]
+}
