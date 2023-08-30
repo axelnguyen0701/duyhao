@@ -10,6 +10,7 @@ module.exports = {
             colors: {
                 "duy-hao-gray": "#E5E6E7",
                 "duy-hao-purple": "#2E2F8A",
+                "duy-hao-blue": "#F0FAFF",
             },
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
