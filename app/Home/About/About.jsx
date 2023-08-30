@@ -10,7 +10,7 @@ export default function About() {
                 <h2 className="text-duy-hao-purple font-medium text-2xl mb-4">
                     Lời Giới Thiệu
                 </h2>
-                <p className="leading-loose font-light text-lg">
+                <p className="leading-loose font-light text-lg text-black">
                     Công ty Duy Hảo đã có 20 năm kinh nghiệm trong lĩnh vực
                     thiết kế, sản xuất, lắp đặt tủ bảng điện, thang máng cáp cho
                     công trình công nghiệp và dân dụng.
