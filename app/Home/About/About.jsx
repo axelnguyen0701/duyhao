@@ -1,5 +1,5 @@
 import Image from "next/image";
-import duyHaoTeam from "../../../public/duy-hao-1.webp";
+import duyHaoTeam from "../../../public/landing/duy-hao-1.webp";
 export default function About() {
     return (
         <section

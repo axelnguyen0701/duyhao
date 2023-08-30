@@ -4,7 +4,8 @@ export default function Hero() {
     return (
         <section
             id="hero"
-            className="flex flex-col items-center text-center h-4/5 bg-gradient-to-t from-cyan-500 to-blue-500 w-full justify-center h-[85vh]"
+            className="flex flex-col items-center text-center h-4/5 w-full justify-center h-[85vh] bg-contain"
+            style={{ backgroundImage: "url('/landing/hero.jpg')" }}
         >
             <div className="text-2xl space-y-2 font-semibold mb-7 text-white">
                 <h2>CHẤT LƯỢNG SẢN PHẨM</h2>

@@ -127,7 +127,7 @@ const Carousel = () => {
                                     <h3 className="text-white py-6 px-3 mx-auto text-xl font-medium">
                                         {resource.title}
                                     </h3>
-                                    <h4 className="font-light">
+                                    <h4 className="text-gray font-light">
                                         {resource.subtitle}
                                     </h4>
                                 </a>

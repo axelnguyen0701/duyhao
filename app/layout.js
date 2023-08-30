@@ -1,4 +1,5 @@
 import NavBar from "./NavBar/NavBar";
+import Footer from "./Footer/Footer";
 import "./globals.css";
 import { Be_Vietnam_Pro } from "next/font/google";
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
             <body className={beVietnamePro.className}>
                 <NavBar />
                 {children}
+                <Footer />
             </body>
         </html>
     );
