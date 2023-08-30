@@ -1,6 +1,6 @@
 import Image from "next/image";
-import arrowDown from "../../public/arrow-204-64.ico";
-export default function Hero(prop) {
+import arrowDown from "../../../public/arrow-204-64.ico";
+export default function Hero() {
     return (
         <section
             id="hero"
@@ -14,11 +14,11 @@ export default function Hero(prop) {
                 <p>Duy Hảo cam kết có đội ngũ kỹ thuật chuyên nghiệp</p>
                 <p> để phục vụ quý khách trong vòng 24h</p>
             </div>
-            <button className="mt-7 rounded-lg border-2 py-1 px-4 text-duy-hao-purple border-duy-hao-purple border-2 hover:bg-duy-hao-purple hover:text-white">
-                Sản phẩm của Duy Hảo
+            <button className="mt-5 rounded-lg border-2 py-1 px-4 text-duy-hao-purple border-duy-hao-purple border-2 hover:bg-duy-hao-purple hover:text-white">
+                Sản Phẩm Của Chúng Tôi
             </button>
             <div className="relative top-48 text-white">
-                <button>
+                <a href="#about">
                     <Image
                         src={arrowDown}
                         alt="Down Arrow"
@@ -26,7 +26,7 @@ export default function Hero(prop) {
                         height={53}
                         width={53}
                     />
-                </button>
+                </a>
             </div>
         </section>
     );

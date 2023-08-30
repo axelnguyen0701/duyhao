@@ -3,7 +3,7 @@ export default function NavBar() {
     return (
         <nav class="bg-duy-hao-gray border-gray-200 py-3 drop-shadow-lg text-lg">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="https://flowbite.com/" class="flex items-center">
+                <a href="/" class="flex items-center">
                     <Image
                         src="/371.jpg"
                         alt="Duy Hao's logo"
