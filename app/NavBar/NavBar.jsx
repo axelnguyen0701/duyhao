@@ -1,6 +1,22 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 export default function NavBar() {
+    const [toggle, setToggle] = useState(false);
+    const navLinks = [
+        {
+            title: "CÔNG TY",
+            url: "/",
+        },
+        { title: "SẢN PHẨM", url: "/products" },
+        { title: "DỰ ÁN", url: "#" },
+        { title: "VỀ CHÚNG TÔI", url: "#" },
+        {
+            title: "LIÊN HỆ",
+            url: "#",
+        },
+    ];
     return (
         <nav class="bg-duy-hao-gray border-gray-200 py-3 drop-shadow-lg text-lg">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -18,6 +34,7 @@ export default function NavBar() {
                     class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
                     aria-controls="navbar-default"
                     aria-expanded="false"
+                    onClick={() => setToggle(!toggle)}
                 >
                     <span class="sr-only">Open main menu</span>
                     <svg
@@ -41,47 +58,18 @@ export default function NavBar() {
                     id="navbar-default"
                 >
                     <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-11 md:mt-0 md:border-0 text-black">
-                        <li>
-                            <Link
-                                href="/"
-                                class="block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:p-0 md:hover:text-gray-500"
-                                aria-current="page"
-                            >
-                                CÔNG TY
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href="/products"
-                                class="block py-2 pl-3 pr-4 rounded hover:text-gray-500 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0"
-                            >
-                                SẢN PHẨM
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href="#"
-                                class="block py-2 pl-3 pr-4 rounded hover:text-gray-500 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0"
-                            >
-                                DỰ ÁN
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href="#"
-                                class="block py-2 pl-3 pr-4 rounded hover:text-gray-500 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0"
-                            >
-                                VỀ CHÚNG TÔI
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href="#"
-                                class="block py-2 pl-3 pr-4 rounded hover:text-gray-500 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0"
-                            >
-                                LIÊN HỆ
-                            </Link>
-                        </li>
+                        {navLinks.map((e, i) => (
+                            <li key={e.title}>
+                                <Link
+                                    href={e.url}
+                                    class="block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:p-0 md:hover:text-gray-500"
+                                    aria-current="page"
+                                >
+                                    {e.title}
+                                </Link>
+                            </li>
+                        ))}
+
                         <li class="self-end pl-8 space-x-2">
                             <span>
                                 <a
@@ -100,6 +88,28 @@ export default function NavBar() {
                                 </a>
                             </span>
                         </li>
+                    </ul>
+                </div>
+                {/* Mobile Navigation */}
+                {/* Sidebar */}
+                <div
+                    className={`${
+                        !toggle ? "hidden" : "flex"
+                    } p-6 bg-duy-hao-gray absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar md:hidden`}
+                >
+                    <ul className="list-none flex justify-end items-start flex-1 flex-col space-y-5">
+                        {navLinks.map((nav, index) => (
+                            <li
+                                key={nav.title}
+                                className={`font-medium cursor-pointer text-[16px]${
+                                    index === navLinks.length - 1
+                                        ? "mb-0"
+                                        : "mb-4"
+                                }`}
+                            >
+                                <Link href={nav.url}>{nav.title}</Link>
+                            </li>
+                        ))}
                     </ul>
                 </div>
             </div>

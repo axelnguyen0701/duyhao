@@ -101,13 +101,13 @@ const Carousel = () => {
                 </div>
                 <div
                     ref={carousel}
-                    className="carousel-container relative flex gap-8 overflow-hidden scroll-smooth snap-x snap-mandatory touch-pan-x z-0"
+                    className="carousel-container relative flex md:gap-8 overflow-hidden scroll-smooth snap-x snap-mandatory touch-pan-x z-0"
                 >
                     {data.resources.map((resource, index) => {
                         return (
                             <div
                                 key={index}
-                                className="carousel-item text-center relative h-80 w-[600px] overflow-hidden snap-start min-w-0 shrink-0"
+                                className="carousel-item text-center relative h-80 md:w-[600px] overflow-hidden snap-start min-w-0 shrink-0"
                             >
                                 <a
                                     href={resource.link}
@@ -122,7 +122,7 @@ const Carousel = () => {
                                 </a>
                                 <a
                                     href={resource.link}
-                                    className="h-full w-full aspect-square flex flex-col justify-center items-center absolute top-0 left-0 transition-opacity duration-300 opacity-0 hover:opacity-100 bg-blue-800/75 z-10"
+                                    className="w-[65vw] h-full md:w-full aspect-square flex flex-col justify-center items-center absolute top-0 left-0 transition-opacity duration-300 md:opacity-0 hover:opacity-100 bg-blue-800/75 z-10"
                                 >
                                     <h3 className="text-white py-6 px-3 mx-auto text-xl font-medium">
                                         {resource.title}
