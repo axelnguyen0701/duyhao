@@ -101,7 +101,7 @@ export default function NavBar() {
                         {navLinks.map((nav, index) => (
                             <li
                                 key={nav.title}
-                                className={`font-medium cursor-pointer text-[16px]${
+                                className={`text-[16px]${
                                     index === navLinks.length - 1
                                         ? "mb-0"
                                         : "mb-4"
