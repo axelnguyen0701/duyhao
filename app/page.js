@@ -9,7 +9,6 @@ export default function Home() {
             <About />
             <Products />
             <Projects />
-            <footer />
         </main>
     );
 }
