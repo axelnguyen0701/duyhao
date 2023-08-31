@@ -24,7 +24,7 @@ export default function Footer() {
 
             <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8 text-white">
                 <div class="sm:flex sm:items-center sm:justify-between">
-                    <div className="w-1/5">
+                    <div className="md:w-1/5 w-full">
                         <a href="/" class="flex items-center mb-4 sm:mb-0">
                             <Image
                                 src="/371.jpg"
@@ -50,7 +50,7 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    <ul class="flex flex-wrap items-center mb-6 font-light text-white sm:mb-0 self-start space-x-8">
+                    <ul class="flex flex-wrap items-center mt-4 md:mt-0 md:mb-6 font-light text-white sm:mb-0 self-start md:space-x-8 ">
                         <li>
                             <a href="#" class="mr-4 hover:underline md:mr-6 ">
                                 Sản Phẩm
@@ -72,7 +72,7 @@ export default function Footer() {
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="hover:underline">
+                            <a href="#" class="hover:underline md:ml-0 ml-4">
                                 Liên Hệ
                             </a>
                         </li>
