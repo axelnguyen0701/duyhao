@@ -14,12 +14,12 @@ export default function Footer() {
                         height: "35vh",
                     }}
                 />
-                <button className="rounded-full border px-5 py-3 bg-duy-hao-red border-transparent relative -top-20 left-40">
+                <button className="rounded-full border px-5 py-3 bg-duy-hao-red border-transparent relative -top-20 left-40 text-white">
                     HOTLINE: 0914443478
                 </button>
             </div>
 
-            <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8 text-white">
                 <div class="sm:flex sm:items-center sm:justify-between">
                     <div className="w-1/5">
                         <a href="/" class="flex items-center mb-4 sm:mb-0">
