@@ -1,17 +1,12 @@
 import Link from "next/link";
 
-export default function Hero() {
+export default function Hero(props) {
     return (
         <section
             id="hero"
             className="flex flex-col items-center text-center h-4/5 w-full justify-center h-[85vh] bg-[#2E2F8A0B]"
         >
-            <div className="text-4xl space-y-2 font-semibold mb-7 text-gray-500 leading-relaxed">
-                <h2>
-                    TỰ HÀO LÀ MỘT NHÀ SẢN XUẤT <br /> VÀ CUNG CẤP HÀNG ĐẦU VIỆT
-                    NAM
-                </h2>
-            </div>
+            {props.children}
             <div className="relative top-48 text-white">
                 <Link href="#product-list">
                     <svg
