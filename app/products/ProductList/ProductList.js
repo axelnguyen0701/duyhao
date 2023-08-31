@@ -27,7 +27,7 @@ export default function ProductList() {
     ));
     return (
         <section className="w-full mt-8 p-4" id="product-list">
-            <div className="grid grid-cols-4 gap-x-4 justify-items-center">
+            <div className="grid grid-cols-2 gap-x-1 justify-items-center md:grid-cols-4 md:gap-x-4">
                 {rendederedProductList}
             </div>
         </section>
