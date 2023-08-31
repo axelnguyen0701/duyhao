@@ -14,9 +14,12 @@ export default function Footer() {
                         height: "35vh",
                     }}
                 />
-                <button className="rounded-full border px-5 py-3 bg-duy-hao-red border-transparent relative -top-20 left-40 text-white">
+                <a
+                    href="tel:+84914443478"
+                    className="rounded-full border px-5 py-3 bg-duy-hao-red border-transparent relative -top-20 left-40 text-white"
+                >
                     HOTLINE: 0914443478
-                </button>
+                </a>
             </div>
 
             <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8 text-white">
