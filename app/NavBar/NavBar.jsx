@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 export default function NavBar() {
     return (
         <nav class="bg-duy-hao-gray border-gray-200 py-3 drop-shadow-lg text-lg">
@@ -41,45 +42,45 @@ export default function NavBar() {
                 >
                     <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-11 md:mt-0 md:border-0 text-black">
                         <li>
-                            <a
-                                href="#"
+                            <Link
+                                href="/"
                                 class="block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:p-0 md:hover:text-gray-500"
                                 aria-current="page"
                             >
                                 CÔNG TY
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
-                                href="#"
+                            <Link
+                                href="/products"
                                 class="block py-2 pl-3 pr-4 rounded hover:text-gray-500 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0"
                             >
                                 SẢN PHẨM
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
+                            <Link
                                 href="#"
                                 class="block py-2 pl-3 pr-4 rounded hover:text-gray-500 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0"
                             >
                                 DỰ ÁN
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
+                            <Link
                                 href="#"
                                 class="block py-2 pl-3 pr-4 rounded hover:text-gray-500 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0"
                             >
                                 VỀ CHÚNG TÔI
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
+                            <Link
                                 href="#"
                                 class="block py-2 pl-3 pr-4 rounded hover:text-gray-500 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0"
                             >
                                 LIÊN HỆ
-                            </a>
+                            </Link>
                         </li>
                         <li class="self-end pl-8 space-x-2">
                             <span>
