@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Carousel from "../../Components/Carousel";
 
 export default function Projects() {
@@ -10,9 +11,12 @@ export default function Projects() {
             </h2>
             <Carousel />
             <div className="text-center mt-8">
-                <button className="rounded-lg border-2 py-1 px-4 text-duy-hao-purple border-duy-hao-purple border-2 hover:bg-duy-hao-purple hover:text-white">
+                <Link
+                    href="/projects"
+                    className="rounded-lg border-2 py-1 px-4 text-duy-hao-purple border-duy-hao-purple border-2 hover:bg-duy-hao-purple hover:text-white"
+                >
                     Xem Tất Cả
-                </button>
+                </Link>
             </div>
         </div>
     );

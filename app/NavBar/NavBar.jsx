@@ -10,7 +10,7 @@ export default function NavBar() {
             url: "/",
         },
         { title: "SẢN PHẨM", url: "/products" },
-        { title: "DỰ ÁN", url: "#" },
+        { title: "DỰ ÁN", url: "/projects" },
         { title: "VỀ CHÚNG TÔI", url: "#" },
         {
             title: "LIÊN HỆ",

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Products() {
     const products = [0, 1, 2, 3, 4, 5];
     const renderedProducts = products.map((p, i) => (
@@ -12,9 +14,12 @@ export default function Products() {
                 {renderedProducts}
             </div>
             <div className="text-center mt-8">
-                <button className="rounded-lg border-2 py-1 px-4 text-duy-hao-purple border-duy-hao-purple border-2 hover:bg-duy-hao-purple hover:text-white">
+                <Link
+                    href="/products"
+                    className="rounded-lg border-2 py-1 px-4 text-duy-hao-purple border-duy-hao-purple border-2 hover:bg-duy-hao-purple hover:text-white"
+                >
                     Xem Tất Cả
-                </button>
+                </Link>
             </div>
         </section>
     );

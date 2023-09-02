@@ -8,7 +8,7 @@ export default function Hero(props) {
         >
             {props.children}
             <div className="relative top-48 text-white">
-                <Link href="#product-list">
+                <Link href={props.scrollTo}>
                     <svg
                         fill="#ACABAB"
                         height="64px"
