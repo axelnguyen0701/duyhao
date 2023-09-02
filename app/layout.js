@@ -10,6 +10,10 @@ const beVietnamePro = Be_Vietnam_Pro({
 
 export const metadata = {
     title: "Duy Hao Engineering",
+    metadataBase: new URL("duyhao.vercel.app"),
+    alternates: {
+        canonical: "/",
+    },
     description:
         "Welcome to Duy Hao Engineering - Innovating the Future of Engineering Solutions. Chào mừng bạn đến với Duy Hao Engineering - Khám phá tương lai của các giải pháp kỹ thuật",
     keywords:
