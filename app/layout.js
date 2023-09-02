@@ -2,6 +2,7 @@ import NavBar from "./NavBar/NavBar";
 import Footer from "./Footer/Footer";
 import "./globals.css";
 import { Be_Vietnam_Pro } from "next/font/google";
+import Head from "next/head";
 
 const beVietnamePro = Be_Vietnam_Pro({
     subsets: ["latin"],
@@ -19,6 +20,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
+            <Head>
+                <meta
+                    name="google-site-verification"
+                    content="j5EN_pdEzOUE8P5bmIJTEX1TqqRwBzpEWruVujcRi2g"
+                />
+            </Head>
             <body className={beVietnamePro.className}>
                 <NavBar />
                 {children}
