@@ -10,7 +10,7 @@ const beVietnamePro = Be_Vietnam_Pro({
 
 export const metadata = {
     title: "Duy Hao Engineering",
-    metadataBase: new URL("duyhao.vercel.app"),
+    metadataBase: new URL("https://duyhao.vercel.app"),
     alternates: {
         canonical: "/",
     },
