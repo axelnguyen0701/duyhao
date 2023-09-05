@@ -25,6 +25,11 @@ export const metadata = {
     verification: {
         google: "j5EN_pdEzOUE8P5bmIJTEX1TqqRwBzpEWruVujcRi2g",
     },
+    icons: {
+        icon: "/favicon.ico",
+        apple: "/favicon.ico",
+    },
+    category: "technology, engineering",
 };
 
 export default function RootLayout({ children }) {
